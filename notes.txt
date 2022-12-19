@@ -1,0 +1,41 @@
+Magesh Kuppan
+
+Schedule:
+    Commence    : 9:30 AM
+    Tea Break   : 11:00 AM (20 mins)
+    Lunch Break : 1:00 PM (1 hr)
+    Tea Break   : 3:30 PM (20 mins)
+    Wind up     : 5:30 PM 
+
+Methodology:
+    - No powerpoints
+    - 100% hands on driven
+
+Repository:
+    https://github.com/tkmagesh/IBM-AdvGo-Dec-2022
+
+About You:
+    Name
+    Total Experience
+    Experience in Golang
+    Specific Expectations
+        Interfaces
+        Goroutines
+        Profiling
+        GRPC
+        Rest API
+        Testing
+    Have you attended MY golang basics class? ( 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1)
+
+
+Quality of the Code?
+    Decoupled
+    Easy to change
+    Reusable
+    Extensible
+
+    Open Closed Principle
+        Open for extension but Closed for modification
+
+Concurrency
+    Concurrency is the ability to have more than one execution path
