@@ -13,10 +13,6 @@ import (
 //consumer
 func main() {
 	ch := GeneratePrimes(3, 100)
-	go func() {
-		ch <- 100
-		ch <- 200
-	}()
 	for no := range ch {
 		fmt.Println(no)
 	}
