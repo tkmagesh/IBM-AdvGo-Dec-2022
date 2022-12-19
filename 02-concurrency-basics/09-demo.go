@@ -5,6 +5,7 @@ import (
 	"sync"
 )
 
+/* Share memory by communicating (using channels) */
 func main() {
 	/*
 		var ch chan int
