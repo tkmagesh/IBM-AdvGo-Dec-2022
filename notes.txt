@@ -39,3 +39,7 @@ Quality of the Code?
 
 Concurrency
     Concurrency is the ability to have more than one execution path
+
+    Detecting data races
+        go run --race <program.go>
+        go build --race <program.go> // DO NOT do this for production build
