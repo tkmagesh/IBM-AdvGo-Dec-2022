@@ -85,3 +85,21 @@ Concurrency Patterns
             discard all the resources in the pool
             shutdown the pool
     3. Runner
+
+Context
+    Used for signaling across goroutines
+    Hierarchy of contexts
+    Can be used to share data across goroutines
+
+    Root Context
+        context.Background()
+
+    Child Contexts
+        context.WithCancel()
+            - used to programmatically send a "cancel" signal
+
+        context.WithTimeout() & context.WithDeadline()
+            - automatically send "cancel" signal based on the time
+
+        context.WithValue()
+            - used to share data across hierarchy of contexts
