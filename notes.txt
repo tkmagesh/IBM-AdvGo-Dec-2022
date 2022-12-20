@@ -129,6 +129,14 @@ gRPC
             Data Contract (Message Contract)
         
         Generate Proxy & Stub
+            protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative proto/service.proto
+
+            service.pb.go
+                Logic for serializing and deserializing the data (data contracts)
+            service_grpc.pb.go
+                Logic for Proxy & Stub
+
+
         Implement the Service
         Host the Service
         Implement the Client to communicate to the server
