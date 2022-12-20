@@ -63,3 +63,8 @@ Concurrency
             A RECEIVE operation is ALWAYS a blocking operation
 
             A SEND operation is BLOCKED until a RECEIVE operation is initiated (Conditions apply)
+
+Concurrency Patterns
+    1. Worker
+    2. Pool
+    3. Runner
