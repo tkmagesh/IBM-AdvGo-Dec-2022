@@ -23,5 +23,6 @@ func main() {
 		w.Run(MyWork{Id: i})
 	}
 	fmt.Println("All tasks are assigned....")
+	fmt.Scanln()
 	w.Shutdown() //wait for all the tasks to complete
 }
