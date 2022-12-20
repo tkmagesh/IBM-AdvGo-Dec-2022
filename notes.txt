@@ -103,3 +103,47 @@ Context
 
         context.WithValue()
             - used to share data across hierarchy of contexts
+
+gRPC
+    Native RPC
+        - .NET remoting
+        - Java RMI
+        
+        Advantages
+            - Serialize the data in binary format (very less payload size when compared to JSON & XML)
+            - Realtime updates
+
+    protocol buffers
+        - serialization mechanism
+
+    Supported Communication Patterns
+        - Request & Response
+        - Server Streaming (One Request & Multiple responses)
+        - Client Streaming (Multiple Requests & One Response)
+        - Bidirectional Streaming (Multiple Requests & Multiple Responses)
+
+    How?
+        Define Schema (using protocol buffers)
+            Service Contract
+            Operation Contract
+            Data Contract (Message Contract)
+        
+        Generate Proxy & Stub
+        Implement the Service
+        Host the Service
+        Implement the Client to communicate to the server
+
+    Installation
+        1. Protocol Buffers Compiler (protoc tool)
+            Windows:
+                Download the file, extract and keep in a folder (PATH) accessble through the command line
+                https://github.com/protocolbuffers/protobuf/releases/download/v21.12/protoc-21.12-win64.zip
+            Mac:
+                brew install protobuf
+
+            Verification:
+                protoc --version
+
+        2. Go plugins
+            go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+            go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
