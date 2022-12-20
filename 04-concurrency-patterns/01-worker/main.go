@@ -20,7 +20,7 @@ func (myWork MyWork) Task() {
 func main() {
 	w := worker.New(5)
 	for i := 1; i <= 20; i++ {
-		w.Run(MyWork{Id: i})
+		w.Add(MyWork{Id: i})
 	}
 	fmt.Println("All tasks are assigned....")
 	fmt.Scanln()

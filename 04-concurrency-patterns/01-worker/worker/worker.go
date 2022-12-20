@@ -14,7 +14,7 @@ type Worker struct {
 	wg        sync.WaitGroup
 }
 
-func (w *Worker) Run(wk Work) {
+func (w *Worker) Add(wk Work) {
 	w.workQueue <- wk
 }
 
