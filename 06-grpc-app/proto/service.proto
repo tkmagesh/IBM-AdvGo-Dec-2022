@@ -1,0 +1,24 @@
+syntax="proto3";
+
+package proto;
+
+/* go package to which the code generated should belong to */
+option go_package="/proto";
+
+/* data contract */
+message AddRequest{
+    int32 x=1;
+    int32 y=2;
+}
+
+message AddResponse{
+    int32 result=1;
+}
+
+/* service contract */
+service AppService{
+
+    /* operation contracts */
+    /* request & response */
+    rpc Add (AddRequest) returns (AddResponse);
+}
