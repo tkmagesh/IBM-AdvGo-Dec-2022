@@ -67,4 +67,21 @@ Concurrency
 Concurrency Patterns
     1. Worker
     2. Pool
+        Help us Minimize (Not Restrict) the # of resources created
+        Pool Size => How many object that can be maintained by the pool for reuse
+
+        Acquire()
+            Check if the resource is in the pool
+                If yes, return the resource from the pool
+                else
+                    Get the resource from the factory and return
+        Release()
+            Check if the pool is empty enough to keep the resource
+                If yes, keep the resource in the pool
+                else
+                    discard the resource
+
+        Close()
+            discard all the resources in the pool
+            shutdown the pool
     3. Runner
