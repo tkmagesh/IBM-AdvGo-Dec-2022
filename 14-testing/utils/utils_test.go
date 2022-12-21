@@ -40,11 +40,16 @@ func Test_IsPrime(t *testing.T) {
 		name           string
 	}{
 		{sut: 7, expectedResult: true, name: "Test_IsPrime_7"},
-		{sut: 8, expectedResult: false, name: "Test_IsPrime_8"},
-		{sut: 9, expectedResult: true, name: "Test_IsPrime_9"},
 		{sut: 11, expectedResult: true, name: "Test_IsPrime_11"},
+		{sut: 8, expectedResult: false, name: "Test_IsPrime_8"},
+		{sut: 9, expectedResult: false, name: "Test_IsPrime_9"},
 		{sut: 12, expectedResult: false, name: "Test_IsPrime_12"},
 	}
+	/*
+		{sut: 8, expectedResult: false, name: "Test_IsPrime_8"},
+		{sut: 9, expectedResult: false, name: "Test_IsPrime_9"},
+		{sut: 12, expectedResult: false, name: "Test_IsPrime_12"},
+	*/
 	for _, data := range testData {
 		t.Run(data.name, func(t *testing.T) {
 			//Arrange
