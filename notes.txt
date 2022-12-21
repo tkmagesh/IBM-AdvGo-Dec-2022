@@ -183,3 +183,8 @@ Test
     
     to install the mockery
         go install github.com/vektra/mockery/v2@latest
+
+Benchmarking
+    go test -bench=.
+    go test -bench=. -benchtime=5s
+    go test -bench=. -cpu=4
