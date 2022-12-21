@@ -158,3 +158,20 @@ gRPC
     
     To analyze the network traffic using WireShark
         https://grpc.io/blog/wireshark/
+
+Http Services
+    1. Only using the Go Standard Library
+    2. Using Routing Libraries
+    3. Using Web Frameworks
+
+    /products
+        - GET
+        - POST
+        - PUT
+        - DELETE
+
+    /customers
+        - GET
+        - POST
+        - PUT
+        - DELETE
